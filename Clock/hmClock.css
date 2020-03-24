@@ -1,0 +1,58 @@
+*
+{text-align: center;}
+
+body
+{
+	transition: 1s;
+}
+
+label
+{
+	font-size: xx-large;
+}
+
+#clock
+{
+	background: #fbaf3f;
+	margin: 0 auto;
+	border-radius: 55px;
+	padding: 20px;
+	width: 300px;
+	text-align: center;
+	display: inline-block;
+}
+
+
+[col*="col-"]
+{
+	float: left;
+}
+.col-1{width:100%;}
+.col-3{width:32%;}
+.col-4{width:23%;}
+
+
+.screens
+{
+	float: left;
+	margin: 0;
+	padding: 0; 
+	font-size: xx-large;
+}
+
+#hours
+{
+	border-radius: 20px 0 0 20px;
+}
+
+#minutes
+{}
+
+#seconds
+{
+}
+
+#MM
+{
+		border-radius: 0 20px 20px 0;
+}
