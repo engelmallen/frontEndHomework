@@ -4,17 +4,21 @@
 body
 {
 	transition: 1s;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("img/bg4.jpg"); 
 }
 
 label
 {
 	font-size: xx-large;
+	margin: 10px 0;
 }
 
 #clock
 {
 	background: #fbaf3f;
-	margin: 0 auto;
+	margin: 100px auto;
 	border-radius: 55px;
 	padding: 20px;
 	width: 300px;
@@ -31,6 +35,10 @@ label
 .col-3{width:32%;}
 .col-4{width:23%;}
 
+#time
+{
+	margin-top: 10px;
+}
 
 .screens
 {

@@ -20,6 +20,7 @@ var secondNow = date.getSeconds()
 var bgColor = "";
 
 
+
 function gettIt(){
 	setInterval(function getDates()
 			{
@@ -27,7 +28,11 @@ function gettIt(){
 			hourNow = date.getHours()
 			minuteNow = date.getMinutes()
 			secondNow = date.getSeconds()
-			bgColor = Math.floor(Math.random() * 1000000)
+
+			bgColor = Math.floor(Math.random() * 20)
+
+			// bgColor = Math.floor(Math.random() * 1000000)
+			
 			},1000)
 }gettIt()
 
@@ -55,12 +60,19 @@ function setIt(){
 				{MM.value = "PM"}
 			else 
 				{MM.value = "AM"}
-			
 		
 		minutes.value = minuteNow;
 		seconds.value = secondNow;
-		document.body.style.backgroundColor = "#"+bgColor;
+		
+		
 		console.log(secondNow)
+		
 		}, 1000)
 }setIt()
 
+function bgChng()
+{
+	setInterval(function()
+	{document.body.style.backgroundImage  = "url('img/bg"+bgColor+".jpg')"}	
+		,3000)
+}bgChng()
